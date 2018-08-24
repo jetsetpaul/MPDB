@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun navigateToSubfilter(filter: Filter){
         val subFilterIntent = SubfilterActivity.createIntent(filter, this)
+        val tag = "FILTER"
+        subFilterIntent.putExtra(tag, filter)
         startActivity(subFilterIntent)
     }
 

@@ -13,7 +13,9 @@ class SubfilterActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Toast.makeText(this, "Hello", Toast.LENGTH_SHORT)
+
+        val selectedFilter = intent.getParcelableExtra<Filter>("FILTER")
+        Toast.makeText(this, selectedFilter.subfilters.toString(), Toast.LENGTH_LONG).show()
 
     }
 
