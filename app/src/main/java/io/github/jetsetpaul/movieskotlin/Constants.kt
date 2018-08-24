@@ -5,4 +5,5 @@ package io.github.jetsetpaul.movieskotlin
  */
 class Constants {
     val API_KEY = "&api_key=e14343540e4d2cbfb1ab77faaca16fb8"
+
 }
